@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "8bd922cb-7e71-4668-b923-b33f2f0ad830",
+		"name": "URL Shortener",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "URL Redirect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://a7riyek86a.execute-api.us-east-1.amazonaws.com/test/ybid3e7",
+					"protocol": "https",
+					"host": [
+						"a7riyek86a",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test",
+						"ybid3e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "URL Shorten",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url_long\": \"https://www.google.com/maps/dir/goSTOPS+Udaipur,+On+Hanuman+Ghat+Marg,+opposite+Chand+Pole,+Tripura,+Pichola,+Udaipur,+Rajasthan/Ambrai+Restaurant,+Ambrai+Road,+Chand+Pole,+Silawatwari,+Udaipur,+Rajasthan/@24.5790591,73.6777836,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3967e5664ca4bcc7:0x7c9d10c733813ce1!2m2!1d73.6801127!2d24.5799551!1m5!1m1!1s0x3967e566e29fb2c1:0xe3a8e38876905a91!2m2!1d73.6800441!2d24.5781534!3e0\",\r\n    \"hostname\": \"a7riyek86a.execute-api.us-east-1.amazonaws.com/test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://a7riyek86a.execute-api.us-east-1.amazonaws.com/test/shrink_url",
+					"protocol": "https",
+					"host": [
+						"a7riyek86a",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test",
+						"shrink_url"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
